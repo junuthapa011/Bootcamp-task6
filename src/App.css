@@ -2,3 +2,70 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+h1{
+  margin-left: 30px;
+  margin-top: 60px;
+  font-family:cursive;
+  display: inline;
+  
+}
+
+.main{
+  background-image: url("https://cdn.wallpapersafari.com/24/23/tq9eWu.jpg");
+  background-size: 100vh;
+  height: 100vh;
+  width: 100vw;
+}
+
+.array {
+  display: grid;
+  list-style-type: inline;
+  padding: 30px;
+  flex-direction: column;
+  
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  font-family:cursive;
+  
+}
+
+nav{
+  background-color: black;
+
+}
+
+nav a {
+  display:inline;
+  text-align: center;
+  color:aliceblue;
+  padding: 0px 30px
+  }
+
+  a:hover {
+   background-color: gray; 
+  }
+
+  .main h1{
+    color: black;
+  } 
+
+li {
+  list-style-type: none;
+  background-color: black;
+  display: inline;
+  margin: 0px 10px;
+  border-style:inset;
+}
+
+.footer{
+  display:flex;
+  bottom: 0;
+  justify-content: center;
+  background-color: black;
+  padding: 30px;
+}

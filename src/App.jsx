@@ -4,31 +4,31 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const Arr=[["John", "Julie"],["Sarah", "Sabina"],["David", "Deena"],["Peter", "Penelope"]]
+
+  let finalArr =[]
+  
+   for(let i=0; i<Arr.length;i++){
+      finalArr[i]=<div className="array"><li><h3>{Arr[i].join("&")}</h3> ipsum dolor sit amet consectetur adipisicing elit. Corporis, at ab velit, mollitia officia hic libero facilis voluptate unde harum esse quo laborum quis, molestias repudiandae magnam qui labore fugit.</li></div>
+   }
+  
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <div className="header"><header><h1>Dance Fever</h1></header></div>
+      <nav>
+        <a href = "index.html">Home</a>
+        <a href = "index.html">Choreographers</a>
+        <a href = "index.html">Events</a>
+        <a href = "index.html">About</a>
+      </nav>
+      <div className = "main">
+        <h1>Get to know our best Choreographers!!</h1>
+        {finalArr}</div>
+      <div className="footer"><footer>Copyright &copy; 2023 <a href ="mailto:junuthapa011@gmail.com">Contact Us</a> </footer></div>
+    
+     
+    </> 
   )
 }
 
